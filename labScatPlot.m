@@ -4,9 +4,6 @@ function []=labScatPlot(X,Y,w,varargin)
 % Y -- [N x 1] pts labels
 %      OR
 %      [L x N] pts indicator
-% varargin -- additional options to pass to the plot command
-%
-% $Id: labScatPlot.m,v 1.17 2007-07-03 23:35:42 jdrf Exp $
 maxsubplots=5;
 if ( numel(findobj(gcf, 'type', 'axes')) > 1 ) maxsubplots=1; end;
 if ( nargin < 3 ) w=[]; end;
